@@ -1,0 +1,208 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior:smooth;
+}
+body{
+  color: #fff;
+}
+/* - COMIENZO SECCIÓN INICIO - */
+#inicio{
+  background-color: black;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+#galeria{
+  max-width: 2200px;
+  min-height: 1100px;
+  margin: auto;
+}
+#galeria h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 1%;
+  font-size: 5rem;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 1px 1.5px 1.5px black, 1.5px 2px 2px darkgray, 2px 2.5px 3px darkblue, 2.5px 3px 4px white, 3px 4px 1px rgb(255, 251, 13);
+}
+#galeria nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  margin-top: 2rem;
+}
+#galeria nav a{
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  width: 600px;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  padding: 1%;
+  transition: .5s ease;
+}
+#galeria nav a:hover{
+  color: darkgray;
+  letter-spacing: 2.8px;
+  scale: 1.08;
+}
+.contenedor-fotos{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: -10%;
+
+}
+.contenedor-fotos img{
+  width: 25%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 1.5px 1.5px 5px rgb(61, 61, 61);
+  border: 1px solid rgb(189, 189, 189);
+  /*filter: grayscale(100%);*/
+  /*opacity: .75;*/
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+#fotos1{
+  animation: mover 6.6s alternate ease-in-out;
+}
+#fotos2{
+  animation: mover 6.3s alternate ease-in-out;
+}
+#fotos3{
+  animation: mover 6s ease-in-out alternate;
+}
+@keyframes mover{
+  0%{
+    filter: none;
+    box-shadow: 1.5px 1.5px 5px rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    width: 25%;
+    transform: rotateY(90deg);
+    scale: 1.5;
+  }
+  50%{
+    filter: none;
+    box-shadow: 1.5px 1.5px 5px rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    scale: 1;
+    width: 25%;
+    transform: rotateY(-90deg);
+    padding: 3px;
+    filter: grayscale(100%);
+  }
+}
+#galeria .info{
+  max-width: 1900px;
+  max-height: 1500px;
+  display: flex;
+  justify-content: center;  
+  margin: 0;
+}
+#galeria .info p{
+  /*color: black;*/
+  margin: 120px 120px 120px 120px;
+  font-size: 2rem;
+  text-align: center;
+  display: center;
+}
+/* - FIN SECCIÓN INICIO - */
+
+hr{
+  border: 3px inset rgb(199, 141, 33) ;
+  border-style: inset;
+  margin: 1px 0 1px 0;
+}
+
+/* - COMIENZO SECCIÓN OPCIONES (Alimentación sana, Consejos saludables, Receta del día) - */
+#artistas{
+  background-color: rgb(99, 99, 99);
+  padding: 20px;
+  /*width: 100%;
+  height: 100%;
+  margin: 0;*/
+}
+#artistas .contenido .fila{
+  width: 100%;
+  display: flex;
+}
+#artistas .contenido .col{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#artistas .contenido .col nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+}
+#artistas .contenido .col .info nav a{
+  margin-right: 20px;
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  transition: all .7s ease;
+  justify-content: center;
+  text-align: center;
+}
+img{
+  margin-top: 12%;
+  width: 60%;
+}
+.selected{
+  color: rgb(202, 202, 202) !important;
+  text-shadow: 1.5px 1.5px 2px black;
+}
+
+#artistas .contenido .col .info nav a:hover{
+  color : white !important;
+  scale: 1.15;
+  text-shadow: 1.5px 2px 3px black;
+  text-decoration: none;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 8px;
+}
+#artistas .contenido .col .descripcion{
+  margin: 3% 0 0 5%;
+  color: rgb(255, 255, 255);
+  line-height: 25px;
+  display: justify;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+#artistas #enlaces{
+  width: 250px;
+  text-align: center;
+  margin: 5% 20% 5% 45%;
+  background-color: rgba(255, 255, 255, 0.315);
+  padding: 3px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid rgb(255, 255, 255);
+  transition: all .8s ease;
+}
+#artistas #enlaces:hover{
+  background-color: rgb(104, 160, 71);
+  scale: 1.1;
+}
+#artistas #enlaces a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
