@@ -13,6 +13,7 @@
             * Animaciones a través de CSS.
             * Uso de Javascript.
             * Enlaces mediante etiquetas.
+            * Scroll.
 
   ## AUTOR ##
   Pettinari Gabriel Alejandro

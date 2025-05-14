@@ -74,8 +74,11 @@ function functionScrollTop(){
   });
 
   window.onscroll = () => {
-    if (window.pageYOffset > 500) {
+    if (window.pageYOffset > 550) {
       btnScrollTop.style.display = "block";
+      btnScrollTop.innerHTML = ` 
+      <img id="flecha-subir" src="/javaScript/icon-footer/icon-other/FlechaSubir.png" alt="Flecha hacia arriba" title="Subir"/>
+      `;
     } else {
       btnScrollTop.style.display = "none";
     }
