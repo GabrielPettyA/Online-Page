@@ -42,18 +42,34 @@ body{
   text-align: center;
   text-transform: uppercase;
   width: 600px;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.6px;
   text-decoration: none;
-  color: white;
-  font-size: 1.3rem;
+  color: darkgray;
+  text-shadow: 2px 1px 5px black, 1px 1px 30px white;
+  font-size: 1.6rem;
   padding: 1%;
   transition: .5s ease;
 }
 #galeria nav a:hover{
-  color: darkgray;
+  color: white;
   letter-spacing: 2.8px;
   scale: 1.08;
+  text-shadow: none;
 }
+
+/*> Efecto de linea inferior de textos navegación */
+nav a{
+  background-position: left bottom;
+  background-image: linear-gradient(90deg, rgb(141, 29, 29), rgb(255, 255, 255), rgb(124, 203, 230));
+  background-size: 0% 2%;
+  background-repeat: no-repeat;
+  transition: background-size 700ms ease-in-out;
+}
+nav a:hover{
+  background-size: 100% 2%;
+}
+/*> Fin efecto de linea inferior de textos navegación */
+
 .contenedor-fotos{
   width: 100%;
   height: 100%;
@@ -104,6 +120,11 @@ body{
     filter: grayscale(100%);
   }
 }
+#fotos{
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
 #galeria .info{
   max-width: 1900px;
   max-height: 1500px;
@@ -118,6 +139,7 @@ body{
   text-align: center;
   display: center;
 }
+
 /* - FIN SECCIÓN INICIO - */
 
 hr{
@@ -206,3 +228,37 @@ img{
   font-size: 1.3rem;
   text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
+
+/*- Inicio flecha hacia arriba - */
+#flecha-subir{
+  width: 50px;
+  height: 50px;
+  rotate: -90deg;
+  padding: 5px;
+  text-shadow: 1.2px 1.2px 2px rgb(87, 87, 87);
+  border-radius: 50%;
+  transition: all .7s ease;
+}
+#flecha-subir:hover{
+  scale: 1.2;
+  box-shadow: 0 0 1px black,
+              0 0 100px rgb(0, 0, 0),
+              0 0 230px black;
+              text-shadow: none;
+}
+#btnScrollTop{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  box-shadow: 1.5px 1.5px 2px rgb(0, 0, 0), 1.7px 2.3px 2px white;
+  cursor: pointer;
+}
+#btnScrollTop:hover{
+  background-color: rgb(230, 230, 230);
+}
+/*- Fin flecha hacia arriba - */

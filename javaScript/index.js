@@ -1,4 +1,6 @@
 const ENLACES = document.getElementById("enlaces");
+const footerContacto = document.getElementById("footerContacto");
+const contactoEvent = document.getElementById("contactoEvent");
 
 function cambiarOpcion(n){
   if(n == 1){
@@ -24,5 +26,58 @@ function cambiarOpcion(n){
     document.getElementById("op2").className = "";
     document.getElementById("op3").className = "selected";
     const RECETASSALUDABLES = ENLACES.innerHTML =`<a href= "../paginas/recetasSaludables.html" target="_blank">Más información aquí</a>`;
+  }
+}
+
+contactoEvent.addEventListener("click", functionEventoContacto);
+function functionEventoContacto(){
+  footerContacto.innerHTML = `
+  <div id="contenedorContacto">
+    <h1 id="titleContactos">CONTACTENOS:</h1>
+
+    <a href="https://api.whatsapp.com/send?phone=+569891234567" target="_blank">
+    <img id="icon" src="/javaScript/icon-footer/icon-contacto/Icon-WhatsApp.png" alt="Icono WhatsApp" title="Contactar por WhatsApp"/></a>
+
+    <a href="https://www.telegram.com/gabrielpettinari/?hl=es-419" target="_blank"><img id="icon" src="/javaScript/icon-footer/icon-contacto/Icon-Telegram.png" alt="Icono Telegram" title="Envía mensaje al Telegram"/></a>
+
+    <a href="https://www.snapchat.com/add/gabriel.pettinari" target="_blank">
+    <img id="icon" src="/javaScript/icon-footer/icon-contacto/Icon-Snapchat.png" alt="Icono Snapchat" title="Contactar por Snapchat"/>
+    </a>
+  </div>
+
+  <div id="contenedorEnlace">
+    <h1 id="titleContactos">ENLACES ONLINE:</h1>
+    <a href="" target="_blank"><img id="icon" src="/javaScript/icon-footer/icon-enlace/Icon-Instagram.png" alt="Icono Instagram" title="Ingresa al Instagram"/></a>
+
+    <a href="" target="_blank">
+    <img id="icon" src="/javaScript/icon-footer/icon-enlace/Icon-TikTok.png" alt="Icono TikTok" title="Ingresar al TikTok"/></a>
+
+    <a href="" target="_blank">
+    <img id="icon" src="/javaScript/icon-footer/icon-enlace/Icon-YouTube.png" alt="Icono YouTube" title="Dirigete a YouTube"/></a>
+
+    <a href="" target="_blank">
+    <img id="icon" src="/javaScript/icon-footer/icon-enlace/Icon-Facebook.png" alt="Icono Facebook" title="Ir al Facebook"/></a>
+
+  </div>
+  <div id="final"></div>
+  `;
+  footerContacto.style.backgroundColor = "rgb(88, 31, 31)";
+  footerContacto.style.border = "4px groove rgb(12, 12, 12)";
+}
+
+const btnScrollTop = document.getElementById("btnScrollTop");
+btnScrollTop.addEventListener("click", functionScrollTop);
+function functionScrollTop(){
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"    
+  });
+
+  window.onscroll = () => {
+    if (window.pageYOffset > 500) {
+      btnScrollTop.style.display = "block";
+    } else {
+      btnScrollTop.style.display = "none";
+    }
   }
 }
