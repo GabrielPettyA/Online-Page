@@ -36,27 +36,27 @@ function functionEventoContacto(){
     <h1 id="titleContactos">CONTACTENOS:</h1>
 
     <a href="https://api.whatsapp.com/send?phone=+569891234567" target="_blank">
-    <img id="icon" src="/javaScript/icon-footer/icon-contacto/Icon-WhatsApp.png" alt="Icono WhatsApp" title="Contactar por WhatsApp"/></a>
+    <img id="icon" src="/icon-footer/icon-contacto/Icon-WhatsApp.png" alt="Icono WhatsApp" title="Contactar por WhatsApp"/></a>
 
-    <a href="https://www.telegram.com/gabrielpettinari/?hl=es-419" target="_blank"><img id="icon" src="/javaScript/icon-footer/icon-contacto/Icon-Telegram.png" alt="Icono Telegram" title="Envía mensaje al Telegram"/></a>
+    <a href="https://www.telegram.com/gabrielpettinari/?hl=es-419" target="_blank"><img id="icon" src="/icon-footer/icon-contacto/Icon-Telegram.png" alt="Icono Telegram" title="Envía mensaje al Telegram"/></a>
 
     <a href="https://www.snapchat.com/add/gabriel.pettinari" target="_blank">
-    <img id="icon" src="/javaScript/icon-footer/icon-contacto/Icon-Snapchat.png" alt="Icono Snapchat" title="Contactar por Snapchat"/>
+    <img id="icon" src="/icon-footer/icon-contacto/Icon-Snapchat.png" alt="Icono Snapchat" title="Contactar por Snapchat"/>
     </a>
   </div>
 
   <div id="contenedorEnlace">
     <h1 id="titleContactos">ENLACES ONLINE:</h1>
-    <a href="" target="_blank"><img id="icon" src="/javaScript/icon-footer/icon-enlace/Icon-Instagram.png" alt="Icono Instagram" title="Ingresa al Instagram"/></a>
+    <a href="" target="_blank"><img id="icon" src="/icon-footer/icon-enlace/Icon-Instagram.png" alt="Icono Instagram" title="Ingresa al Instagram"/></a>
 
     <a href="" target="_blank">
-    <img id="icon" src="/javaScript/icon-footer/icon-enlace/Icon-TikTok.png" alt="Icono TikTok" title="Ingresar al TikTok"/></a>
+    <img id="icon" src="/icon-footer/icon-enlace/Icon-TikTok.png" alt="Icono TikTok" title="Ingresar al TikTok"/></a>
 
     <a href="" target="_blank">
-    <img id="icon" src="/javaScript/icon-footer/icon-enlace/Icon-YouTube.png" alt="Icono YouTube" title="Dirigete a YouTube"/></a>
+    <img id="icon" src="/icon-footer/icon-enlace/Icon-YouTube.png" alt="Icono YouTube" title="Dirigete a YouTube"/></a>
 
     <a href="" target="_blank">
-    <img id="icon" src="/javaScript/icon-footer/icon-enlace/Icon-Facebook.png" alt="Icono Facebook" title="Ir al Facebook"/></a>
+    <img id="icon" src="/icon-footer/icon-enlace/Icon-Facebook.png" alt="Icono Facebook" title="Ir al Facebook"/></a>
 
   </div>
   <div id="final"></div>
@@ -77,7 +77,7 @@ function functionScrollTop(){
     if (window.pageYOffset > 550) {
       btnScrollTop.style.display = "block";
       btnScrollTop.innerHTML = ` 
-      <img id="flecha-subir" src="/javaScript/icon-footer/icon-other/FlechaSubir.png" alt="Flecha hacia arriba" title="Subir"/>
+      <img id="flecha-subir" src="/icon-footer/icon-other/FlechaSubir.png" alt="Flecha hacia arriba" title="Subir"/>
       `;
     } else {
       btnScrollTop.style.display = "none";

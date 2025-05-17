@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,15 @@
   <link rel="stylesheet" href="/styles/Icon.css">
   <title>Actividad Física</title>
 </head>
+
 <body>
   <!-- Sección Inicio -->
   <section id="inicio">
     <div id="galeria">
-      <h1>Entrenamiento Fitness</h1>
+      <div class="contenedor-logo">
+        <img src="/logo/LogoCircular.png" alt="Logo" id="logo">
+        <h1>Entrenamiento Fitness</h1>
+      </div>
       <nav>
         <a href="../index.html">Home</a>
         <a id="contactoEvent" href="#final">Contacto</a>
@@ -25,11 +30,15 @@
         <img id="fotos3" src="/img/mujer-tomando.JPG" alt="">
       </div>
       <div class="info">
-        <p>Alguna vez has oído: "El único entrenamiento que falla es el que no se hace", o tal vez..."No te preocupes por cuánto tiempo te tomará alcanzar tu meta, preocúpate por no detenerte", o quizás hallas escuchado: "La fuerza no viene de la capacidad física, sino de la voluntad indomable"... lo real de todo esto es que es cierto cada una de estas palabras, todo empieza desde uno mismo, todo transcurre según las metas que nos proponemos. Te invito a que nos cuentes tus metas, y que permitas que te acompañemos en tu camino hacia el logro que quieres obtener. Estamos aquí para ayudarte en el proceso del entrenamiento.
-        No lo dude más, el primer paso es el comienzo de una vida saludable !!!
+        <p>Alguna vez has oído: "El único entrenamiento que falla es el que no se hace", o tal vez..."No te preocupes
+          por cuánto tiempo te tomará alcanzar tu meta, preocúpate por no detenerte", o quizás hallas escuchado: "La
+          fuerza no viene de la capacidad física, sino de la voluntad indomable"... lo real de todo esto es que es
+          cierto cada una de estas palabras, todo empieza desde uno mismo, todo transcurre según las metas que nos
+          proponemos. Te invito a que nos cuentes tus metas, y que permitas que te acompañemos en tu camino hacia el
+          logro que quieres obtener. Estamos aquí para ayudarte en el proceso del entrenamiento.
+          No lo dude más, el primer paso es el comienzo de una vida saludable !!!
         </p>
 
-        <!-- * <a style="color: white;" href="https://youtu.be/aGUN_js76x4" target="_blank">ver video</a> ASÍ SE PUEDE HACER LINKS A VIDEOS-->
 
       </div>
     </div>
@@ -43,20 +52,22 @@
       <div class="fila">
         <div class="col">
           <div class="info">
-            <nav>
+            <nav class="nav-op">
 
               <a href="javascript:void(0)" onclick="cambiarOpcion(1)" id="op1" class="selected">Alimentación sana</a>
 
-              <a href="javascript:void(0)" onclick="cambiarOpcion(2)" id="op2" >Consejo saludable</a>
+              <a href="javascript:void(0)" onclick="cambiarOpcion(2)" id="op2">Consejo saludable</a>
 
-              <a href="javascript:void(0)" onclick="cambiarOpcion(3)" id="op3" >Receta del día</a>
+              <a href="javascript:void(0)" onclick="cambiarOpcion(3)" id="op3">Receta del día</a>
 
             </nav>
             <p id="descripcion" class="descripcion">
-              La alimentación es una parte esencial de la salud. Nos complace decir que la alimentación sana es la mejor forma de mantener una vida saludable. Si tiene alguna duda, contactenos por los distintos medios de comunicación que se encuentran a su disposición. Estamos aquí para ayudarle.
-              <h3 id="enlaces"><a href= "../paginas/alimentacion.html" target="_blank">Más información aquí</a></h3>
+              La alimentación es una parte esencial de la salud. Nos complace decir que la alimentación sana es la mejor
+              forma de mantener una vida saludable. Si tiene alguna duda, contactenos por los distintos medios de
+              comunicación que se encuentran a su disposición. Estamos aquí para ayudarle.
+            <h3 id="enlaces"><a href="../paginas/alimentacion.html" target="_blank">Más información aquí</a></h3>
             </p>
-            
+
           </div>
         </div>
         <div class="col">
@@ -70,9 +81,10 @@
     <button class="btn-scroll-top" id="btnScrollTop">
       <h1>↑ Subir</h1>
     </button>
-    
-  <script src="../javaScript/index.js"></script>
 
-  
+    <script src="../javaScript/index.js"></script>
+
+
 </body>
+
 </html>

@@ -1,0 +1,319 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: #394a64;
+}
+
+/* * INICIO MODAL DE FOTOS E INFORMACIÓN PERTINENTE - */
+.titulo{
+  text-align: left;
+  font-size: 3rem;
+  padding-top: 50px;
+  margin:0 0 3% 3%;
+  text-shadow: 1px 1px 2px rgb(238, 8, 8), 1.5px 1.5px 1px rgb(255, 255, 255)
+  ,1.5px 1.5px 1px rgb(255, 255, 255);
+}
+.slider-box{
+  max-width: 1200px;
+  min-height: 750px;
+  margin: auto;
+  overflow: hidden;
+  background: linear-gradient(to bottom left, rgb(255, 255, 255) 3%, rgb(48, 85, 116) 65%, rgb(255, 255, 255) 85%);
+  justify-items: center;
+  align-items: center;
+  box-shadow: inset 1px 1px 70px rgb(255, 255, 255),
+  inset 1.3px 1.3px 5px rgb(255, 255, 255),
+  inset .5px .3px 50px rgb(0, 0, 0),
+  -1px -1px 100px black;
+  border: .5px solid black;
+  border-radius: 15px;
+}
+.slider-box ul{
+  display: flex;
+  padding: 0px;
+  width: 500%;
+  animation: slide 150s infinite ease-in-out;
+}
+@keyframes slide{
+  0%{ margin-left: 430%;}/** Texto inicial */
+  /*15%{ margin-left: 280%;}*/
+
+  16%{ margin-left: 285%;}/** Cerdo con ensalada */
+  /*35%{ margin-left: 100%;}*/
+
+  32%{ margin-left: 143%;}/** Pescado en ensalada */
+  /*55%{ margin-left: -50%;}*/
+
+  48%{ margin-left: 0%;}/** Legumbres */
+  /*80%{ margin-left: -100%;}*/
+
+  64%{ margin-left: -143%;}/** Verduras */
+
+  /*85%{ margin-left: -420%;}*/
+  80%{ margin-left: -284%;}/** Frutas */
+
+  100%{ margin-left: -427%;}/** Texto final */
+
+}
+.slider-box ul li{
+  list-style: none;
+  width: 100%;
+  position: relative;
+  margin: 1% 1% 1% 1%;
+}
+.texto{
+  position: absolute;
+  /*transform: translate(-50%, -50%);*/
+  text-align: center;
+  justify-items: center;
+  color: #fff;
+  padding: 0 60px;
+}
+.texto p{
+  width: 80%;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  justify-content: center;
+  text-align: justify;
+  text-shadow: 1px 1px 2px black, 1.5px 1.5px 2px black;
+}
+#texto-principal{
+  width: 73%;
+  height: auto;
+  margin: auto;
+  display: block;
+  justify-items: center;
+  text-align: justify;
+  padding: 5px;
+  text-shadow: 0 0 2px rgb(0, 0, 0);
+  color: rgb(133, 198, 214);
+}
+#texto-principal #tituloTexto{
+  font-size: 2.5rem;
+  color: rgb(65, 65, 65);
+  text-shadow: .5px .5px 1px rgb(255, 255, 255);
+  margin: 5px 50px 3px 0;
+}
+#texto-principal #parrafo-principal{
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  text-shadow: .5px .5px 1px rgb(255, 255, 255);
+  margin: 5px 0 3px 0;
+}
+.texto h2{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px black, 1.5px 1.5px 2px black, 2px 2px 3px black;
+}
+.slider-box img{
+  width: 50%;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+  display: block;
+}
+
+/* > Resposive */
+@media(max-width: 600px), screen and (max-height: auto){
+  body{
+    padding: 30px
+  }
+
+  .slider-box{
+    width: 100%;
+  }
+
+  .texto{
+    top: 50px;
+    padding: 0 20px;
+  }
+
+  .texto h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+
+}
+/* * FIN MODAL DE FOTOS E INFORMACIÓN PERTINENTE - */
+
+/** INICIO FOOTER IMPRESIÓN DE SUGERENCIAS NUEVAS ARCHIVO .JS  */
+#btn-sugerencia{
+  min-width: 10%;
+  height: auto;
+  margin: 10px auto 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 7px;
+  text-align: justify;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 4px double rgb(65, 65, 65);
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all .6s ease;
+}
+#btn-sugerencia:hover{
+  background-color: rgb(230, 230, 230);
+  scale: .96;
+}
+
+#footer-comidas{
+  width: 80%;
+  height: auto;
+  margin: .5% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 0px;
+  text-align: justify;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
+
+/* > Resposive */
+@media(max-width: 600px), screen and (max-height: auto){
+  #footerComidas{
+    padding: 30px
+  }
+}
+
+/** INICIO DE LOS CONTENEDORES INGRESADOS POR ARCHIVO .JS  */
+#footer-comidas .section{
+  width: 100%;
+  height: auto;
+  margin: auto auto 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer-comidas .contenedor-footer{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer-comidas .contenedor-texto{
+  width: 50%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer-comidas .contenedor-texto #titulo-footer{
+  font-size: 2rem;
+  margin-right: 20px;
+  text-shadow: 1px 1px 2px black, 1.5px 1.5px 2px black, 2px 2px 3px black;
+}
+#footer-comidas .contenedor-texto p{
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  text-shadow: .5px .5px 1px rgb(255, 255, 255);
+  margin: auto;
+}
+#footer-comidas .contenedor-img{
+  width: 50px;
+  height: auto;
+  margin: auto ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer-comidas .contenedor-img img{
+  width: 300px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+#btn-salir{
+  width: 10%;
+  height: auto;
+  margin: 10px auto 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 7px;
+  text-align: justify;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 4px double rgb(65, 65, 65);
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all .6s ease;
+}
+#btn-salir:hover{
+  background-color: rgb(230, 230, 230);
+  scale: .96;
+}
+/* > Resposive */
+@media(max-width: 600px), screen and (max-height: 1100px){
+  #footer-comidas{
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  #footer-comidas .contenedor-footer{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #footer-comidas .contenedor-texto{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #footer-comidas .contenedor-img{
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: flex;
+    /*
+    justify-content: start;
+    align-items: start;
+    flex-direction: flex-start;*/
+  }
+  #footer-comidas .contenedor-texto #titulo-footer{
+    font-size: 35px;
+    margin: 2% 0 5% 5%;
+    display: flex;
+  }
+  #footer-comidas.contenedor-texto #parrafo-footer{
+    width: 100%;
+    /*height: 100vh;*/
+    margin: 20% 0 0 0;
+    justify-items: justify-content;
+    /*
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;*/
+  }
+}
+/* * FIN DE LOS CONTENEDORES INGRESADOS POR ARCHIVO .JS  */
+  

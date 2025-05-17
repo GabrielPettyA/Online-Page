@@ -22,14 +22,38 @@ body{
   min-height: 1100px;
   margin: auto;
 }
-#galeria h1{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 1%;
-  font-size: 5rem;
+/* > Inicio sección de Logo y título */
+.contenedor-logo{
+  width: 100%;
+  height: auto;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  margin: auto;
+  padding: 2%;
+  display: inline-block;
+}
+#galeria h1{
+  width: auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   text-shadow: 1px 1.5px 1.5px black, 1.5px 2px 2px darkgray, 2px 2.5px 3px darkblue, 2.5px 3px 4px white, 3px 4px 1px rgb(255, 251, 13);
 }
+#logo{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+
+}
+/* > Fin sección de Logo y título */
+
+/*> Inicio sección de navegación */
 #galeria nav{
   display: flex;
   justify-content: space-between;
@@ -47,11 +71,17 @@ body{
   color: darkgray;
   text-shadow: 2px 1px 5px black, 1px 1px 30px white;
   font-size: 1.6rem;
-  padding: 1%;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 0.7;
   transition: .5s ease;
 }
 #galeria nav a:hover{
-  color: white;
+  border: 1px solid white;
+  box-shadow: inset 0px 0px 4px black;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
   letter-spacing: 2.8px;
   scale: 1.08;
   text-shadow: none;
@@ -60,15 +90,16 @@ body{
 /*> Efecto de linea inferior de textos navegación */
 nav a{
   background-position: left bottom;
-  background-image: linear-gradient(90deg, rgb(141, 29, 29), rgb(255, 255, 255), rgb(124, 203, 230));
-  background-size: 0% 2%;
-  background-repeat: no-repeat;
-  transition: background-size 700ms ease-in-out;
+  background-image: linear-gradient(90deg,rgb(26, 70, 55), rgb(255, 255, 255), rgb(160, 90, 90) );
+  background-size: 0% 0%;
+  background-repeat: ease;
+  transition: background-size 800ms ease-in-out;
 }
 nav a:hover{
-  background-size: 100% 2%;
+  background-size: 100% 1%;
 }
 /*> Fin efecto de linea inferior de textos navegación */
+/* > Fin sección de navegación */
 
 .contenedor-fotos{
   width: 100%;
@@ -92,13 +123,13 @@ nav a:hover{
   justify-content: center;
 }
 #fotos1{
-  animation: mover 6.6s alternate ease-in-out;
+  animation: mover 5.3s alternate ease-in-out;
 }
 #fotos2{
   animation: mover 6.3s alternate ease-in-out;
 }
 #fotos3{
-  animation: mover 6s ease-in-out alternate;
+  animation: mover 7.3s ease-in-out alternate;
 }
 @keyframes mover{
   0%{
@@ -166,13 +197,13 @@ hr{
   align-items: center;
   justify-content: center;
 }
-#artistas .contenido .col nav{
+#artistas .contenido .col .nav-op{
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-left: 5%;
 }
-#artistas .contenido .col .info nav a{
+#artistas .contenido .col .info .nav-op a{
   margin-right: 20px;
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -180,13 +211,22 @@ hr{
   transition: all .7s ease;
   justify-content: center;
   text-align: center;
-/* Linea inferior animada*/
-  background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255), rgb(0, 0, 0), rgb(0, 0, 0));
+}
+  /*> Linea inferior animada*/
+#artistas .contenido .col .info .nav-op a{
+  background-image: linear-gradient(90deg,rgb(26, 70, 55), rgb(26, 70, 55), rgb(255, 255, 255), rgb(160, 90, 90), rgb(160, 90, 90) );
   background-position: left bottom;
   background-origin: border-box;
-  background-repeat: none;
-  background-size: 0% 5%;
+  background-size: 0% 10%;
+  background-repeat: no-repeat;
+
 }
+#artistas .contenido .col .info .nav-op a:hover{
+  background-size: 100% 10%;
+  background-repeat: no-repeat;
+}
+/*> Fin linea inferior animada*/
+
 img{
   margin-top: 12%;
   width: 60%;
@@ -196,12 +236,11 @@ img{
   text-shadow: 1.5px 1.5px 2px black;
 }
 
-#artistas .contenido .col .info nav a:hover{
+#artistas .contenido .col .info .nav-op a:hover{
   color : white !important;
   /*scale: 1.15;*/
   text-shadow: 1.5px 2px 3px black;
   text-decoration: none;
-  background-size: 100% 3%;
   /*border: .2px solid rgb(255, 255, 255);*/
   /*padding: 5px;*/
   border-radius: 4px;
